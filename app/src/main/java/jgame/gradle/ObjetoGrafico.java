@@ -16,11 +16,12 @@ public class ObjetoGrafico {
 
     public ObjetoGrafico(String filename) {
         try {
+
             imagen = ImageIO.read(getClass().getClassLoader().getResourceAsStream(filename));
 
         } catch (IOException e){
-            System.out.println("ZAS! en ObjetoGrafico " + e);
 
+            System.out.println("ZAS! en ObjetoGrafico " + e);
         }
     }
 

@@ -15,23 +15,10 @@ public class ObjetoGrafico {
     int velocidadY = 0;
 
     public ObjetoGrafico(String filename) {
-        try {
-
-            imagen = ImageIO.read(getClass().getClassLoader().getResourceAsStream(filename));
-
-        } catch (IOException e){
-
-            System.out.println("ZAS! en ObjetoGrafico " + e);
-        }
-    }
-
-    public ObjetoGrafico(String filename, double posicionX, double posicionY) {
 
         try {
 
             imagen = ImageIO.read(getClass().getClassLoader().getResourceAsStream(filename));
-            this.posicionX = posicionX;
-            this.posicionY = posicionY;
 
         } catch (IOException e){
 
